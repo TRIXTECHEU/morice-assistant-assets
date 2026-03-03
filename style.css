@@ -84,17 +84,18 @@
   /* 4) Subheader (title and description under avatar) */
   --subheader-padding: 38px 20px 18px;
   --subheader-avatar-clip: circle(50% at 50% 50%);
-  --subheader-text-color: #656D75;
 
   /* Title */
   --subheader-title-text: "Poznejte obec Mořice";
   --subheader-title-size: 17px;
   --subheader-title-weight: 700;
+  --subheader-title-color: #223C83;
   --subheader-title-align: center;
 
   /* Description */
   --subheader-desc-text: "prostřednictvím našeho AI asistenta";
   --subheader-desc-size: 15px;
+  --subheader-desc-color: #656D75;
   --subheader-desc-weight: normal;
   --subheader-desc-align: center;
 
@@ -287,7 +288,7 @@
   --ai-icon-image: url('https://trixtecheu.github.io/morice-assistant-assets/images/icons/icon-ai-sparkles.png');
   --ai-icon-width: 24px;
   --ai-icon-height: 24px;
-  --ai-label-bg: #040B04;
+  --ai-label-bg: #223C83;
   --ai-label-radius: 0 0 20px 20px;
   --ai-label-padding: 9px 16px 8px;
   --ai-label-gap: 7px;
