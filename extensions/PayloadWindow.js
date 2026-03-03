@@ -107,9 +107,7 @@
   src: url('https://cdn.jsdelivr.net/fontsource/fonts/carlito@latest/latin-700-normal.woff2') format('woff2'),
        url('https://cdn.jsdelivr.net/fontsource/fonts/carlito@latest/latin-700-normal.woff') format('woff');
 }
-* {
-  font-family: 'Carlito', sans-serif !important;
-}
+* { font-family: 'Carlito', sans-serif !important; }
 #morice-cta,
 #morice-cta *,
 #morice-cta *::before,
@@ -127,30 +125,17 @@
   vertical-align: baseline !important;
   color: #FFF !important;
 }
-:root {
-  --morice-primary: #223C83;
-  --morice-primary-hover: #223C83;
-  --morice-border: #EFEFEF;
-  --morice-text: #0B1720;
-  --morice-bg: #FFFFFF;
-  --morice-card-w: 240px;
-  --morice-launcher-size: 120px;
-  --morice-font: 'Carlito', sans-serif;
-  --morice-avatar-size: 96px;
-  --morice-avatar-margin: 6px 0;
-  --morice-bottom: 100px;
-}
 #morice-cta.morice-cta {
   position: fixed !important;
   right: 18px !important;
-  bottom: var(--morice-bottom, 100px) !important;
+  bottom: 105px !important;
   z-index: 999999 !important;
   opacity: 0 !important;
   transform: translateY(8px) scale(.98) !important;
   visibility: hidden !important;
   pointer-events: none !important;
   transition: opacity .2s ease, transform .2s ease, visibility 0s linear .2s !important;
-  font-family: var(--morice-font) !important;
+  font-family: 'Carlito', sans-serif !important;
   margin: 0 !important;
   padding: 0 !important;
   width: auto !important;
@@ -190,7 +175,7 @@
   flex-direction: column !important;
   gap: 10px !important;
   box-shadow: 0 16px 32px -16px rgba(0,0,0,.28) !important;
-  font-family: var(--morice-font) !important;
+  font-family: 'Carlito', sans-serif !important;
   margin: 0 !important;
   box-sizing: border-box !important;
   overflow: visible !important;
@@ -201,16 +186,16 @@
   display: flex !important;
   align-items: center !important;
   gap: 10px !important;
-  margin: 0 !important;
-  padding: var(--morice-avatar-margin, 6px 0) !important;
+  margin: 0px 0px -5px 0px !important;
+  padding: 6px 0 !important;
   width: 100% !important;
   box-sizing: border-box !important;
 }
 #morice-cta .morice-avatar {
-  width: var(--morice-avatar-size, 96px) !important;
+  width: 100px !important;
   height: auto !important;
   flex: 0 0 auto !important;
-  max-width: var(--morice-avatar-size, 96px) !important;
+  max-width: 100px !important;
   max-height: none !important;
   min-width: unset !important;
   min-height: unset !important;
@@ -219,7 +204,7 @@
   background: transparent !important;
   user-select: none !important;
   -webkit-user-drag: none !important;
-  margin: 0 !important;
+  margin: 0px -5px 4px 0px !important;
   padding: 0 !important;
   display: block !important;
 }
@@ -241,9 +226,7 @@
   font-weight: 400 !important;
   font-size: 18px !important;
 }
-#morice-cta .morice-title-rest {
-  display: none !important;
-}
+#morice-cta .morice-title-rest { display: none !important; }
 #morice-cta .morice-desc {
   margin: 2px 0 4px !important;
   font-size: 15px !important;
@@ -258,7 +241,6 @@
   position: relative !important;
   overflow: hidden !important;
   padding: 10px 18px !important;
-  border: 0 !important;
   border-radius: 15px !important;
   font-family: 'Poppins', sans-serif !important;
   font-weight: 700 !important;
@@ -283,18 +265,14 @@
 #morice-cta #morice-open.morice-btn span {
   color: #223C83 !important;
 }
-#morice-cta #morice-open.morice-btn:active {
-  transform: translateY(1px) !important;
-}
+#morice-cta #morice-open.morice-btn:active { transform: translateY(1px) !important; }
 #morice-cta #morice-open.morice-btn:hover {
   background: #223C83 !important;
   border: 2px solid #223C83 !important;
   color: #FFFFFF !important;
 }
 #morice-cta #morice-open.morice-btn:hover .morice-label,
-#morice-cta #morice-open.morice-btn:hover span {
-  color: #FFFFFF !important;
-}
+#morice-cta #morice-open.morice-btn:hover span { color: #FFFFFF !important; }
 #morice-cta #morice-open.morice-btn:focus-visible {
   outline: none !important;
   box-shadow: 0 0 0 3px rgba(0,123,204,.25) !important;
@@ -358,16 +336,9 @@
     min-width: auto !important;
     margin: 0 !important;
   }
-  #morice-cta .morice-title {
-    font-size: 15px !important;
-  }
-  #morice-cta .morice-desc {
-    font-size: 14px !important;
-  }
-  #morice-cta #morice-open.morice-btn {
-    padding: 12px 20px !important;
-    font-size: 16px !important;
-  }
+  #morice-cta .morice-title { font-size: 15px !important; }
+  #morice-cta .morice-desc { font-size: 14px !important; }
+  #morice-cta #morice-open.morice-btn { padding: 12px 20px !important; font-size: 16px !important; }
 }
 @media (max-width: 480px) {
   #morice-cta.morice-cta {
@@ -382,22 +353,10 @@
     padding: 12px !important;
     border-radius: 14px !important;
   }
-  #morice-cta .morice-avatar {
-    width: 56px !important;
-    max-width: 56px !important;
-  }
-  #morice-cta .morice-title {
-    font-size: 14px !important;
-  }
-  #morice-cta .morice-desc {
-    font-size: 13.5px !important;
-    line-height: 1.4 !important;
-  }
-  #morice-cta #morice-open.morice-btn {
-    padding: 11px 18px !important;
-    font-size: 15px !important;
-    border-radius: 15px !important;
-  }
+  #morice-cta .morice-avatar { width: 56px !important; max-width: 56px !important; }
+  #morice-cta .morice-title { font-size: 14px !important; }
+  #morice-cta .morice-desc { font-size: 13.5px !important; line-height: 1.4 !important; }
+  #morice-cta #morice-open.morice-btn { padding: 11px 18px !important; font-size: 15px !important; border-radius: 15px !important; }
 }
   `.trim();
 
@@ -423,9 +382,7 @@
   function scheduleAutoReShow() {
     clearTimeout(reShowTimer);
     reShowTimer = setTimeout(function() {
-      var sessionChatOpen = getSS(SS.CHAT_OPEN) === '1';
-      var chatVisible = detectChatVisible();
-      if (!chatOpen && !chatVisible && !sessionChatOpen) {
+      if (!chatOpen && !detectChatVisible() && getSS(SS.CHAT_OPEN) !== '1') {
         rmSS(SS.SUPPRESS);
         updateMessage();
         showCTA({ deepScroll: deepScroll, longStay: longStay });
@@ -443,21 +400,18 @@
 
   function injectCTA() {
     if (document.getElementById('morice-cta')) return;
-
-    var timeOfDay = getTimeOfDay();
-    var defaultMsg = MSG.default[timeOfDay] || MSG.default.day;
-
+    var tod = getTimeOfDay();
     var wrap = document.createElement('div');
     wrap.innerHTML = [
       '<div class="morice-cta" id="morice-cta" aria-live="polite" aria-hidden="true" style="display:none">',
       '  <div class="morice-card">',
-      '    <button class="morice-close" id="morice-close" aria-label="Skrýt">×</button>',
+      '    <button class="morice-close" id="morice-close" aria-label="Skrýt">\xd7</button>',
       '    <div class="morice-header">',
       '      <img class="morice-avatar" src="https://trixtecheu.github.io/morice-assistant-assets/images/morice-ai-assistant.png" alt="" draggable="false" ondragstart="return false;">',
       '      <span class="morice-title"><span class="morice-title-accent">se zeptej!</span></span>',
       '    </div>',
-      '    <p class="morice-desc" id="morice-text">' + defaultMsg + '</p>',
-      '    <button id="morice-open" class="morice-btn" aria-label="Otevřít AI asistenta obce Mořice"><span class="morice-label">ZEPTAT SE</span></button>',
+      '    <p class="morice-desc" id="morice-text">' + (MSG.default[tod] || MSG.default.day) + '</p>',
+      '    <button id="morice-open" class="morice-btn" aria-label="Otev\u0159\xedt AI asistenta obce Mo\u0159ice"><span class="morice-label">ZEPTAT SE</span></button>',
       '  </div>',
       '</div>'
     ].join('\n');
@@ -465,104 +419,78 @@
   }
 
   function getTimeOfDay() {
-    var hour = new Date().getHours();
-    if (hour >= 5 && hour < 12) return 'morning';
-    if (hour >= 12 && hour < 18) return 'day';
+    var h = new Date().getHours();
+    if (h >= 5 && h < 12) return 'morning';
+    if (h >= 12 && h < 18) return 'day';
     return 'night';
   }
 
   function pickMessage(ctx, forceUpdate) {
+    var tod = getTimeOfDay();
     if (messageLocked && !forceUpdate && currentMessageType) {
-      var tod = getTimeOfDay();
-      return (MSG[currentMessageType] && MSG[currentMessageType][tod]) || MSG.default[tod] || MSG.default.day;
+      return (MSG[currentMessageType] && MSG[currentMessageType][tod]) || MSG.default[tod];
     }
-
-    var timeOfDay = getTimeOfDay();
     var chatClosedTime = getSS(SS.CHAT_CLOSED_TIME);
-    var messageType = 'default';
-
+    var type = 'default';
     if (!chatClosedTime) {
-      if (showCount === 0) {
-        messageType = 'default';
-      } else if (ctx && ctx.deepScroll && !visible) {
-        messageType = 'deep';
-      } else if (ctx && ctx.longStay && !visible) {
-        messageType = 'linger';
-      }
+      if (showCount > 0 && ctx && ctx.deepScroll && !visible) type = 'deep';
+      else if (showCount > 0 && ctx && ctx.longStay && !visible) type = 'linger';
     } else {
-      var timeSinceClose = now() - Number(chatClosedTime);
-      if (timeSinceClose < 60000) {
-        messageType = 'return_short';
-      } else if (timeSinceClose < 300000) {
-        messageType = 'return_medium';
-      } else if (timeSinceClose < 600000) {
-        messageType = 'return_long';
-      } else {
-        var sessionAge = now() - sessionStart;
-        if (sessionAge > UX.sessionTimeoutMs) {
-          messageType = 'session_expired';
-        } else if (showCount > 3) {
-          messageType = 'final_attempt';
-        } else if (ctx && ctx.longStay) {
-          messageType = 'idle_reminder';
-        } else {
-          messageType = 'return_medium';
-        }
+      var diff = now() - Number(chatClosedTime);
+      if (diff < 60000) type = 'return_short';
+      else if (diff < 300000) type = 'return_medium';
+      else if (diff < 600000) type = 'return_long';
+      else {
+        if (now() - sessionStart > UX.sessionTimeoutMs) type = 'session_expired';
+        else if (showCount > 3) type = 'final_attempt';
+        else if (ctx && ctx.longStay) type = 'idle_reminder';
+        else type = 'return_medium';
       }
     }
-
-    if (!messageLocked || forceUpdate) currentMessageType = messageType;
-    return (MSG[messageType] && MSG[messageType][timeOfDay]) || MSG.default[timeOfDay] || MSG.default.day;
+    if (!messageLocked || forceUpdate) currentMessageType = type;
+    return (MSG[type] && MSG[type][tod]) || MSG.default[tod];
   }
 
   function updateMessage(forceUpdate) {
-    if (!descEl) return;
-    descEl.textContent = pickMessage({ deepScroll: deepScroll, longStay: longStay }, forceUpdate);
+    if (descEl) descEl.textContent = pickMessage({ deepScroll: deepScroll, longStay: longStay }, forceUpdate);
   }
 
   function detectChatVisible() {
     if (window.voiceflow && window.voiceflow.chat && typeof window.voiceflow.chat.isOpen === 'function') {
       try { return window.voiceflow.chat.isOpen(); } catch (e) {}
     }
-    var launcher = document.querySelector('.vfrc-launcher, button.vfrc-launcher');
-    if (launcher) {
-      var cs = window.getComputedStyle(launcher);
-      var rect = launcher.getBoundingClientRect();
-      return !(cs.display !== 'none' && cs.visibility !== 'hidden' && cs.opacity !== '0' && rect.width > 10);
+    var l = document.querySelector('.vfrc-launcher, button.vfrc-launcher');
+    if (l) {
+      var cs = window.getComputedStyle(l);
+      return !(cs.display !== 'none' && cs.visibility !== 'hidden' && cs.opacity !== '0' && l.getBoundingClientRect().width > 10);
     }
     return false;
   }
 
   function canShow() {
     if (!vfReady || !window.voiceflow || !window.voiceflow.chat) return false;
-    if (detectChatVisible()) return false;
+    if (chatOpen || detectChatVisible()) return false;
     if (getSS(SS.CHAT_OPEN) === '1') return false;
     if (getSS(SS.SUPPRESS) === '1') return false;
     if (getSS(SS.PAYLOAD_DISMISSED) === '1') return false;
-    if (chatOpen) return false;
-
     var chatClosedTime = getSS(SS.CHAT_CLOSED_TIME);
-    var longClosed = chatClosedTime && (now() - Number(chatClosedTime) > 120000);
-    if (!longClosed && !metDwell && !metScroll) return false;
+    if (!chatClosedTime && !metDwell && !metScroll) return false;
+    if (chatClosedTime && (now() - Number(chatClosedTime) < 120000) && !metDwell && !metScroll) return false;
     if (within(getLS(LS.LAST_CLOSE), UX.closeCooldownMs)) return false;
     return true;
   }
 
   function showCTA(ctx) {
     if (chatOpen || detectChatVisible() || !ctaEl || visible || !canShow()) return;
-    if (detectChatVisible()) { chatOpen = true; setSS(SS.CHAT_OPEN, '1'); return; }
-
     visible = true;
     messageLocked = true;
     showCount++;
     setSS(SS.SHOW_COUNT, String(showCount));
     setSS(SS.LAST_SHOW_TIME, String(now()));
-
     ctaEl.style.display = '';
     ctaEl.classList.remove('is-out');
     ctaEl.classList.add('is-in');
     ctaEl.removeAttribute('aria-hidden');
-
     clearTimeout(autoHideTimer);
     autoHideTimer = setTimeout(function() {
       if (visible && !chatOpen && !detectChatVisible()) {
@@ -588,7 +516,6 @@
     };
     ctaEl.addEventListener('transitionend', done);
     setTimeout(done, 160);
-    if (!autoHideWasTimer) return;
     autoHideWasTimer = false;
   }
 
@@ -623,44 +550,17 @@
       return;
     }
     if (!canShow()) return;
-
     var ctx = { deepScroll: deepScroll, longStay: longStay };
-    var chatClosedTime = getSS(SS.CHAT_CLOSED_TIME);
-    var messageType = 'default';
-
-    if (!chatClosedTime) {
-      if (showCount > 0 && deepScroll) messageType = 'deep';
-      else if (showCount > 0 && longStay) messageType = 'linger';
-    } else {
-      var timeSinceClose = now() - Number(chatClosedTime);
-      if (timeSinceClose < 60000) messageType = 'return_short';
-      else if (timeSinceClose < 300000) messageType = 'return_medium';
-      else if (timeSinceClose < 600000) messageType = 'return_long';
-      else {
-        var sessionAge = now() - sessionStart;
-        if (sessionAge > UX.sessionTimeoutMs) messageType = 'session_expired';
-        else if (showCount > 3) messageType = 'final_attempt';
-        else if (longStay) messageType = 'idle_reminder';
-        else messageType = 'return_medium';
-      }
+    var delay = getDelayForMessageType(pickMessage(ctx), ctx);
+    if (vfReadyTime && (now() - vfReadyTime < 5000)) {
+      setTimeout(function() {
+        if (!chatOpen && !detectChatVisible() && canShow()) {
+          updateMessage();
+          setTimeout(function() { if (!chatOpen && !detectChatVisible()) showCTA(ctx); }, delay);
+        }
+      }, 5000 - (now() - vfReadyTime));
+      return;
     }
-
-    var delay = getDelayForMessageType(messageType, ctx);
-
-    if (vfReadyTime) {
-      var timeSinceVFReady = now() - vfReadyTime;
-      var minDelayAfterVF = 5000;
-      if (timeSinceVFReady < minDelayAfterVF) {
-        setTimeout(function() {
-          if (!chatOpen && !detectChatVisible() && canShow()) {
-            updateMessage();
-            setTimeout(function() { if (!chatOpen && !detectChatVisible()) showCTA(ctx); }, delay);
-          }
-        }, minDelayAfterVF - timeSinceVFReady);
-        return;
-      }
-    }
-
     updateMessage();
     setTimeout(function() { if (!chatOpen && !detectChatVisible()) showCTA(ctx); }, delay);
   }
@@ -670,14 +570,12 @@
     enforceTimer = setInterval(function() {
       var openNow = detectChatVisible();
       var wasChatOpen = chatOpen;
-      var sessionChatOpen = getSS(SS.CHAT_OPEN) === '1';
-
-      if (openNow || chatOpen || sessionChatOpen) {
+      var sessionOpen = getSS(SS.CHAT_OPEN) === '1';
+      if (openNow || chatOpen || sessionOpen) {
         if (!chatOpen) { chatOpen = true; setSS(SS.CHAT_OPEN, '1'); }
         if (visible) hideCTA();
         return;
       }
-
       if (!openNow && wasChatOpen) {
         chatOpen = false;
         setSS(SS.CHAT_OPEN, '0');
@@ -693,8 +591,7 @@
         }, UX.reShowDelayMs);
         return;
       }
-
-      if (!openNow && !chatOpen && !sessionChatOpen && !visible && canShow() && !detectChatVisible()) {
+      if (!openNow && !chatOpen && !sessionOpen && !visible && canShow()) {
         updateMessage();
         showCTA({ deepScroll: deepScroll, longStay: longStay });
       }
@@ -702,27 +599,17 @@
   }
 
   function observeVF() {
-    var checkLauncher = function() {
-      var launcher = document.querySelector('.vfrc-launcher, button.vfrc-launcher');
-      if (!launcher) return;
-      var cs = window.getComputedStyle(launcher);
-      var launcherVisible = cs.display !== 'none' && cs.visibility !== 'hidden' && cs.opacity !== '0';
-      if (!launcherVisible && !chatOpen) {
-        chatOpen = true;
-        setSS(SS.CHAT_OPEN, '1');
-        if (visible) hideCTA();
-      } else if (launcherVisible && chatOpen) {
-        chatOpen = false;
-        setSS(SS.CHAT_OPEN, '0');
-        setSS(SS.CHAT_CLOSED_TIME, String(now()));
-      }
+    var check = function() {
+      var l = document.querySelector('.vfrc-launcher, button.vfrc-launcher');
+      if (!l) return;
+      var cs = window.getComputedStyle(l);
+      var vis = cs.display !== 'none' && cs.visibility !== 'hidden' && cs.opacity !== '0';
+      if (!vis && !chatOpen) { chatOpen = true; setSS(SS.CHAT_OPEN, '1'); if (visible) hideCTA(); }
+      else if (vis && chatOpen) { chatOpen = false; setSS(SS.CHAT_OPEN, '0'); setSS(SS.CHAT_CLOSED_TIME, String(now())); }
     };
-    var mo = new MutationObserver(checkLauncher);
-    mo.observe(document.body, { childList: true, subtree: true, attributes: true, attributeFilter: ['style', 'class'] });
-    var launcher = document.querySelector('.vfrc-launcher, button.vfrc-launcher');
-    if (launcher) {
-      new MutationObserver(checkLauncher).observe(launcher, { attributes: true, attributeFilter: ['style', 'class'] });
-    }
+    new MutationObserver(check).observe(document.body, { childList: true, subtree: true, attributes: true, attributeFilter: ['style', 'class'] });
+    var l = document.querySelector('.vfrc-launcher, button.vfrc-launcher');
+    if (l) new MutationObserver(check).observe(l, { attributes: true, attributeFilter: ['style', 'class'] });
   }
 
   function markChatOpened() {
@@ -733,37 +620,24 @@
     hideCTA();
   }
 
-  function bindOpenChatButton() {
-    var btn = document.getElementById('morice-open');
-    if (btn) {
-      btn.addEventListener('click', function() {
-        try { window.voiceflow.chat.open(); } catch (_) {}
-        setSS(SS.SUPPRESS, '1');
-        markChatOpened();
-      });
-    }
-  }
-
   function bindLauncherClick() {
-    var LAUNCHER_SEL = '.vfrc-launcher__container, .vfrc-launcher__inner, .vfrc-widget__launcher, .vfrc-launcher, .vfrc-button[title="Open chat agent"], [data-testid="vfrc-launcher"], [data-voiceflow-launcher]';
-    var HOST_SEL = '#voiceflow-chat, #voiceflow-chat-widget';
-
+    var SEL = '.vfrc-launcher__container, .vfrc-launcher__inner, .vfrc-widget__launcher, .vfrc-launcher, .vfrc-button[title="Open chat agent"], [data-testid="vfrc-launcher"], [data-voiceflow-launcher]';
+    var HOSTS = '#voiceflow-chat, #voiceflow-chat-widget';
     document.addEventListener('click', function(e) {
-      var target = e.target;
-      if (!target) return;
-      var path = (typeof e.composedPath === 'function') ? e.composedPath() : [];
+      var t = e.target;
+      if (!t) return;
+      var path = typeof e.composedPath === 'function' ? e.composedPath() : [];
       for (var i = 0; i < path.length; i++) {
-        if (path[i] && path[i].matches && path[i].matches(LAUNCHER_SEL)) { markChatOpened(); return; }
+        if (path[i] && path[i].matches && path[i].matches(SEL)) { markChatOpened(); return; }
       }
-      if (target.closest && target.closest(LAUNCHER_SEL)) { markChatOpened(); return; }
-      var hosts = document.querySelectorAll(HOST_SEL);
-      for (var j = 0; j < hosts.length; j++) {
-        var sr = hosts[j] && hosts[j].shadowRoot;
-        if (!sr || !sr.contains(target)) continue;
+      if (t.closest && t.closest(SEL)) { markChatOpened(); return; }
+      document.querySelectorAll(HOSTS).forEach(function(host) {
+        var sr = host && host.shadowRoot;
+        if (!sr || !sr.contains(t)) return;
         for (var k = 0; k < path.length; k++) {
-          if (path[k] && path[k].matches && path[k].matches(LAUNCHER_SEL)) { markChatOpened(); return; }
+          if (path[k] && path[k].matches && path[k].matches(SEL)) { markChatOpened(); }
         }
-      }
+      });
     }, true);
   }
 
@@ -784,40 +658,37 @@
   }
 
   function bindCloseButtons() {
-    var CLOSE_SEL = 'button[title="Close chat agent"], [aria-label="Close"], .vfrc-header__button, .vfrc-close, .vfrc-close-button, [data-testid="vfrc-header-close"]';
-    var HOST_SEL = '#voiceflow-chat, #voiceflow-chat-widget';
-
+    var SEL = 'button[title="Close chat agent"], [aria-label="Close"], .vfrc-header__button, .vfrc-close, .vfrc-close-button, [data-testid="vfrc-header-close"]';
+    var HOSTS = '#voiceflow-chat, #voiceflow-chat-widget';
     document.addEventListener('click', function(e) {
       var t = e.target;
       if (!t) return;
-      var path = (typeof e.composedPath === 'function') ? e.composedPath() : [];
+      var path = typeof e.composedPath === 'function' ? e.composedPath() : [];
       for (var i = 0; i < path.length; i++) {
-        if (path[i] && path[i].matches && path[i].matches(CLOSE_SEL)) { handleChatClosed(); return; }
+        if (path[i] && path[i].matches && path[i].matches(SEL)) { handleChatClosed(); return; }
       }
-      if (t.closest && t.closest(CLOSE_SEL)) { handleChatClosed(); return; }
-      var hosts = document.querySelectorAll(HOST_SEL);
-      for (var j = 0; j < hosts.length; j++) {
-        var sr = hosts[j] && hosts[j].shadowRoot;
-        if (!sr || !sr.contains(t)) continue;
+      if (t.closest && t.closest(SEL)) { handleChatClosed(); return; }
+      document.querySelectorAll(HOSTS).forEach(function(host) {
+        var sr = host && host.shadowRoot;
+        if (!sr || !sr.contains(t)) return;
         for (var k = 0; k < path.length; k++) {
-          if (path[k] && path[k].matches && path[k].matches(CLOSE_SEL)) { handleChatClosed(); return; }
+          if (path[k] && path[k].matches && path[k].matches(SEL)) { handleChatClosed(); }
         }
-      }
+      });
     }, true);
   }
 
   function getDelayForMessageType(type, ctx) {
-    var base = UX.showDelayMs;
-    var tod = getTimeOfDay();
-    if (type === 'default') return base + (tod === 'morning' ? 2000 : tod === 'night' ? 3000 : 1500);
-    if (type === 'deep' || (ctx && ctx.deepScroll)) return base + 4000;
-    if (type === 'linger' || (ctx && ctx.longStay)) return base + 5000;
-    if (type === 'return_short') return base + 1000;
-    if (type === 'return_medium') return base + 2000;
-    if (type === 'return_long') return base + 2500;
-    if (type === 'idle_reminder') return base + 6000;
-    if (type === 'final_attempt') return base + 3500;
-    return base + 2000;
+    var b = UX.showDelayMs, tod = getTimeOfDay();
+    if (type === 'default') return b + (tod === 'morning' ? 2000 : tod === 'night' ? 3000 : 1500);
+    if (type === 'deep' || (ctx && ctx.deepScroll)) return b + 4000;
+    if (type === 'linger' || (ctx && ctx.longStay)) return b + 5000;
+    if (type === 'return_short') return b + 1000;
+    if (type === 'return_medium') return b + 2000;
+    if (type === 'return_long') return b + 2500;
+    if (type === 'idle_reminder') return b + 6000;
+    if (type === 'final_attempt') return b + 3500;
+    return b + 2000;
   }
 
   setTimeout(function() { boot = false; }, UX.bootWindowMs);
@@ -847,7 +718,6 @@
   window.PayloadWindowOnReady = function(api) {
     vfReady = true;
     vfReadyTime = now();
-
     try {
       if (api && api.proactive && api.proactive.push) {
         var _orig = api.proactive.push.bind(api.proactive);
@@ -857,18 +727,14 @@
         };
       }
     } catch (_) {}
-
     if (detectChatVisible() || getSS(SS.CHAT_OPEN) === '1') {
       chatOpen = true; setSS(SS.CHAT_OPEN, '1');
       if (visible) hideCTA();
     }
-
     metDwell = false; metScroll = false; deepScroll = false; longStay = false;
     clearTimeout(dwellTimer); clearTimeout(longTimer);
-
     observeVF();
     startEnforcer();
-
     setTimeout(function() { scheduleDwell(); scheduleLongStay(); watchScroll(); }, UX.vfReadyDelayMs);
     setTimeout(function() {
       if (!chatOpen && !detectChatVisible() && canShow()) {
@@ -883,13 +749,11 @@
     btnOpenEl = document.getElementById('morice-open');
     btnCloseEl = document.getElementById('morice-close');
     descEl = document.getElementById('morice-text');
-
     if (btnOpenEl) btnOpenEl.addEventListener('click', function() {
       try { window.voiceflow.chat.open(); } catch (_) {}
       setSS(SS.SUPPRESS, '1');
       markChatOpened();
     });
-
     if (btnCloseEl) btnCloseEl.addEventListener('click', function() {
       setSS(SS.PAYLOAD_DISMISSED, '1');
       setSS(SS.SUPPRESS, '1');
@@ -906,8 +770,8 @@
         if (visible) hideCTA();
         return;
       }
-      if (attempts >= 10) { rmSS(SS.SUPPRESS); chatOpen = false; return; }
-      setTimeout(check, 500);
+      if (attempts < 10) setTimeout(check, 500);
+      else { rmSS(SS.SUPPRESS); chatOpen = false; }
     };
     setTimeout(check, 1000);
   }
@@ -916,22 +780,18 @@
     showCount = parseInt(getSS(SS.SHOW_COUNT) || '0');
     sessionStart = parseInt(getSS(SS.SESSION_START) || String(now()));
     setSS(SS.SESSION_START, String(sessionStart));
-
     injectCSS();
     injectCTA();
     bindCTA();
-    bindOpenChatButton();
     bindLauncherClick();
     bindCloseButtons();
     startEnforcer();
     observeVF();
-
     document.addEventListener('visibilitychange', function() {
       if (document.visibilityState === 'visible' && !metDwell) scheduleDwell();
     });
-
     if (getSS(SS.CHAT_OPEN) === '1') {
-      chatOpen = true; setSS(SS.CHAT_OPEN, '1');
+      chatOpen = true;
       if (visible) hideCTA();
     } else {
       checkChatOnLoad();
