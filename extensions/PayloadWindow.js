@@ -216,7 +216,7 @@
   white-space: nowrap !important;
   overflow: hidden !important;
   text-overflow: ellipsis !important;
-  margin: 0 !important;
+  margin: 0px 35px 0px 0px !important;
   padding: 0 !important;
   flex: 1 1 auto !important;
 }
