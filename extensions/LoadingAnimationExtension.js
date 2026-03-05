@@ -1,5 +1,4 @@
 /* TrixTech s.r.o. @2026 */
-
 window.LoadingAnimationExtension = {
   name: 'LoadingAnimation',
   type: 'response',
@@ -117,11 +116,20 @@ window.LoadingAnimationExtension = {
 
       const style = document.createElement('style');
       style.textContent = `
+        .vfrc-message--extension-LoadingAnimation {
+          align-self: flex-start !important;
+          margin-right: auto !important;
+          margin-left: 0 !important;
+          width: fit-content !important;
+          min-width: 180px;
+        }
+
         .vfrc-message.vfrc-message--extension.LoadingAnimation {
           opacity: 1;
           transition: opacity 0.3s ease-out;
           width: 100%;
           display: block;
+          text-align: left;
         }
 
         .vfrc-message.vfrc-message--extension.LoadingAnimation.hide {
@@ -133,6 +141,7 @@ window.LoadingAnimationExtension = {
         .loading-box {
           display: flex;
           align-items: center;
+          justify-content: flex-start;
           gap: 8px;
           padding: 8px 12px;
           margin: 0;
@@ -151,6 +160,8 @@ window.LoadingAnimationExtension = {
           position: relative;
           display: flex;
           flex-direction: column;
+          align-items: flex-start;
+          text-align: left;
           max-width: 100%;
           opacity: 1;
           transform: translateY(0);
@@ -320,6 +331,9 @@ window.LoadingAnimationExtension = {
       });
 
       if (element) {
+        element.style.alignSelf = 'flex-start';
+        element.style.marginRight = 'auto';
+        element.style.marginLeft = '0';
         element.appendChild(container);
         void container.offsetHeight;
       }
