@@ -116,20 +116,23 @@ window.LoadingAnimationExtension = {
 
       const style = document.createElement('style');
       style.textContent = `
+        /* 1. Zcela resetujeme Voiceflow obal, zprůhledníme ho a roztáhneme */
         .vfrc-message--extension-LoadingAnimation {
-          align-self: flex-start !important;
-          margin-right: auto !important;
-          margin-left: 0 !important;
-          width: fit-content !important;
-          min-width: 180px;
+          display: flex !important;
+          justify-content: flex-start !important;
+          width: 100% !important;
+          background-color: transparent !important;
+          padding: 0 !important;
+          border: none !important;
+          box-shadow: none !important;
+          margin: 0 !important;
         }
 
         .vfrc-message.vfrc-message--extension.LoadingAnimation {
           opacity: 1;
           transition: opacity 0.3s ease-out;
-          width: 100%;
+          width: fit-content !important; /* Důležité: nedovolí bublině roztáhnout se naplno */
           display: block;
-          text-align: left;
         }
 
         .vfrc-message.vfrc-message--extension.LoadingAnimation.hide {
@@ -138,23 +141,23 @@ window.LoadingAnimationExtension = {
           pointer-events: none;
         }
 
+        /* 2. Naše čistá bublina zarovnaná doleva */
         .loading-box {
           display: flex;
           align-items: center;
           justify-content: flex-start;
           gap: 8px;
-          padding: 8px 12px;
+          padding: 10px 14px;
           margin: 0;
-          width: 100%;
           box-sizing: border-box;
           background-color: #F9FAFB;
-          border-radius: 12px;
+          border-radius: 16px; /* Mírně kulatější pro lepší vizuál */
           border: 1px solid #E5E7EB;
         }
 
         .loading-text {
           color: rgba(26, 30, 35, 0.7);
-          font-size: 12px;
+          font-size: 14px; /* Zvětšeno pro lepší čitelnost s ohledem na okolní text */
           line-height: 1.3;
           font-family: var(--_1bof89na);
           position: relative;
@@ -331,9 +334,14 @@ window.LoadingAnimationExtension = {
       });
 
       if (element) {
-        element.style.alignSelf = 'flex-start';
-        element.style.marginRight = 'auto';
-        element.style.marginLeft = '0';
+        // Natvrdo vnutíme levé zarovnání a vymazání designu Voiceflow obalu i přes JS jako pojistku
+        element.style.setProperty('display', 'flex', 'important');
+        element.style.setProperty('justify-content', 'flex-start', 'important');
+        element.style.setProperty('width', '100%', 'important');
+        element.style.setProperty('background-color', 'transparent', 'important');
+        element.style.setProperty('padding', '0', 'important');
+        element.style.setProperty('box-shadow', 'none', 'important');
+        
         element.appendChild(container);
         void container.offsetHeight;
       }
