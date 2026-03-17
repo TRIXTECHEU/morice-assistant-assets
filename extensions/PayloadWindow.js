@@ -135,17 +135,6 @@
   visibility: hidden !important;
   pointer-events: none !important;
   transition: opacity .2s ease, transform .2s ease, visibility 0s linear .2s !important;
-  font-family: 'Carlito', sans-serif !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  width: auto !important;
-  height: auto !important;
-  max-width: none !important;
-  max-height: none !important;
-  min-width: 0 !important;
-  min-height: 0 !important;
-  float: none !important;
-  clear: both !important;
   display: block !important;
 }
 #morice-cta.morice-cta.is-in {
@@ -163,9 +152,9 @@
 }
 #morice-cta .morice-card {
   position: relative !important;
-  width: 240px !important;
-  max-width: 240px !important;
-  min-width: 240px !important;
+  width: 260px !important;
+  max-width: 260px !important;
+  min-width: 260px !important;
   background: linear-gradient(180deg, #FFFFFF 0%, #AEBEEA 100%) !important;
   color: #0B1720 !important;
   border: 0 !important;
@@ -173,93 +162,67 @@
   padding: 14px !important;
   display: flex !important;
   flex-direction: column !important;
-  gap: 10px !important;
   box-shadow: 0 16px 32px -16px rgba(0,0,0,.28) !important;
-  font-family: 'Carlito', sans-serif !important;
-  margin: 0 !important;
-  box-sizing: border-box !important;
-  overflow: visible !important;
-  float: none !important;
-  clear: both !important;
 }
 #morice-cta .morice-header {
   display: flex !important;
   align-items: center !important;
-  gap: 10px !important;
-  margin: 0px 0px -5px 0px !important;
-  padding: 6px 0 !important;
+  margin: 0 0 8px 0 !important;
+  padding: 0 !important;
   width: 100% !important;
-  box-sizing: border-box !important;
 }
 #morice-cta .morice-avatar {
-  width: 100px !important;
+  width: 55px !important;
   height: auto !important;
-  flex: 0 0 auto !important;
-  max-width: 100px !important;
-  max-height: none !important;
-  min-width: unset !important;
-  min-height: unset !important;
+  flex: 0 0 55px !important;
+  max-width: 55px !important;
   object-fit: contain !important;
   border-radius: 0 !important;
   background: transparent !important;
-  user-select: none !important;
-  -webkit-user-drag: none !important;
-  margin: 0px -5px 4px 0px !important;
-  padding: 0 !important;
+  margin: 0 10px 0 0 !important;
   display: block !important;
 }
 #morice-cta .morice-title {
   font-size: 16px !important;
   font-weight: 400 !important;
-  font-family: 'Carlito', sans-serif !important;
-  line-height: 1.1 !important;
-  white-space: nowrap !important;
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
-  margin: 0px 35px 0px 0px !important;
+  line-height: 1.2 !important;
+  margin: 0 24px 0 0 !important;
   padding: 0 !important;
   flex: 1 1 auto !important;
+  white-space: normal !important;
 }
 #morice-cta .morice-title-accent {
   color: #000000 !important;
-  font-family: 'Carlito', sans-serif !important;
-  font-weight: 400 !important;
-  font-size: 18px !important;
+  font-weight: 700 !important;
+  font-size: 17px !important;
 }
 #morice-cta .morice-title-rest { display: none !important; }
 #morice-cta .morice-desc {
-  margin: 2px 0 4px !important;
-  font-size: 15px !important;
-  line-height: 1.35 !important;
+  margin: 0 0 12px 0 !important;
+  font-size: 14px !important;
+  line-height: 1.4 !important;
   color: #0B1720 !important;
-  padding: 0 !important;
-  width: 100% !important;
-  box-sizing: border-box !important;
   font-weight: 400 !important;
 }
 #morice-cta #morice-open.morice-btn {
   position: relative !important;
   overflow: hidden !important;
-  padding: 10px 18px !important;
-  border-radius: 15px !important;
+  padding: 12px 18px !important;
+  border-radius: 12px !important;
   font-family: 'Poppins', sans-serif !important;
   font-weight: 700 !important;
   letter-spacing: .05em !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
   cursor: pointer !important;
   background: #FFFFFF !important;
   border: 2px solid #223C83 !important;
   color: #223C83 !important;
   transition: background .2s ease, color .2s ease, border-color .2s ease !important;
-  margin: 0 !important;
   width: 100% !important;
-  box-sizing: border-box !important;
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
   text-align: center !important;
-  text-decoration: none !important;
-  line-height: normal !important;
 }
 #morice-cta #morice-open.morice-btn .morice-label,
 #morice-cta #morice-open.morice-btn span {
@@ -283,10 +246,6 @@
   right: -10px !important;
   width: 24px !important;
   height: 24px !important;
-  min-width: 24px !important;
-  min-height: 24px !important;
-  max-width: 24px !important;
-  max-height: 24px !important;
   border-radius: 999px !important;
   border: 1px solid rgba(0,0,0,.15) !important;
   background: #FFF !important;
@@ -297,66 +256,65 @@
   display: grid !important;
   place-items: center !important;
   box-shadow: 0 8px 16px -10px rgba(0,0,0,.25) !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  box-sizing: border-box !important;
-  text-align: center !important;
 }
 #morice-cta .morice-avatar,
 #morice-cta .morice-btn,
 #morice-cta .morice-close,
 #morice-cta .morice-card,
-#morice-cta .morice-cta,
 #morice-cta img {
   -webkit-user-drag: none !important;
   user-select: none !important;
 }
+
 @media (max-width: 768px) {
   #morice-cta.morice-cta {
     right: 20px !important;
-    left: auto !important;
     bottom: calc(80px + 20px) !important;
-    transform: translateY(8px) scale(.98) !important;
-  }
-  #morice-cta.morice-cta.is-in {
-    opacity: 1 !important;
-    transform: translateY(0) scale(1) !important;
-    visibility: visible !important;
-    pointer-events: auto !important;
-  }
-  #morice-cta.morice-cta.is-out {
-    opacity: 0 !important;
-    transform: translateY(8px) scale(.98) !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
   }
   #morice-cta .morice-card {
-    width: calc(100vw - 32px) !important;
-    max-width: 240px !important;
+    width: calc(100vw - 40px) !important;
+    max-width: 260px !important;
     min-width: auto !important;
-    margin: 0 !important;
   }
-  #morice-cta .morice-title { font-size: 15px !important; }
-  #morice-cta .morice-desc { font-size: 14px !important; }
-  #morice-cta #morice-open.morice-btn { padding: 12px 20px !important; font-size: 16px !important; }
+
+  #morice-cta .morice-avatar {
+    width: 48px !important;
+    height: 48px !important;
+    flex: 0 0 48px !important;
+    max-width: 48px !important;
+    object-fit: contain !important;
+  }
+  #morice-cta .morice-header svg.morice-avatar,
+  #morice-cta .morice-header svg {
+    width: 48px !important;
+    height: 48px !important;
+    max-width: 48px !important;
+  }
 }
+
 @media (max-width: 480px) {
   #morice-cta.morice-cta {
-    right: 12px !important;
-    left: auto !important;
-    bottom: calc(70px + 16px) !important;
+    right: 20px !important;
+    bottom: calc(80px + 20px) !important;
   }
   #morice-cta .morice-card {
-    width: calc(100vw - 24px) !important;
-    max-width: 100% !important;
-    min-width: auto !important;
-    padding: 12px !important;
-    border-radius: 14px !important;
+    width: calc(100vw - 40px) !important;
+    max-width: 260px !important; 
   }
-  #morice-cta .morice-avatar { width: 56px !important; max-width: 56px !important; }
-  #morice-cta .morice-title { font-size: 14px !important; }
-  #morice-cta .morice-desc { font-size: 13.5px !important; line-height: 1.4 !important; }
-  #morice-cta #morice-open.morice-btn { padding: 11px 18px !important; font-size: 15px !important; border-radius: 15px !important; }
+
+  #morice-cta .morice-avatar {
+    width: 44px !important;
+    height: 44px !important;
+    flex: 0 0 44px !important;
+    max-width: 44px !important;
+    object-fit: contain !important;
+  }
+  #morice-cta .morice-header svg.morice-avatar,
+  #morice-cta .morice-header svg {
+    width: 44px !important;
+    height: 44px !important;
+    max-width: 44px !important;
+  }
 }
   `.trim();
 
