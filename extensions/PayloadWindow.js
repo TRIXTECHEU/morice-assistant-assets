@@ -172,14 +172,14 @@
   width: 100% !important;
 }
 #morice-cta .morice-avatar {
-  width: 55px !important;
+  width: 95px !important;
   height: auto !important;
   flex: 0 0 55px !important;
-  max-width: 55px !important;
+  max-width: 95px !important;
   object-fit: contain !important;
   border-radius: 0 !important;
   background: transparent !important;
-  margin: 0 10px 0 0 !important;
+  margin: -5px 5px 0 0 !important;
   display: block !important;
 }
 #morice-cta .morice-title {
@@ -265,7 +265,6 @@
   -webkit-user-drag: none !important;
   user-select: none !important;
 }
-
 @media (max-width: 768px) {
   #morice-cta.morice-cta {
     right: 20px !important;
@@ -276,22 +275,7 @@
     max-width: 260px !important;
     min-width: auto !important;
   }
-
-  #morice-cta .morice-avatar {
-    width: 48px !important;
-    height: 48px !important;
-    flex: 0 0 48px !important;
-    max-width: 48px !important;
-    object-fit: contain !important;
-  }
-  #morice-cta .morice-header svg.morice-avatar,
-  #morice-cta .morice-header svg {
-    width: 48px !important;
-    height: 48px !important;
-    max-width: 48px !important;
-  }
 }
-
 @media (max-width: 480px) {
   #morice-cta.morice-cta {
     right: 20px !important;
@@ -300,20 +284,6 @@
   #morice-cta .morice-card {
     width: calc(100vw - 40px) !important;
     max-width: 260px !important; 
-  }
-
-  #morice-cta .morice-avatar {
-    width: 44px !important;
-    height: 44px !important;
-    flex: 0 0 44px !important;
-    max-width: 44px !important;
-    object-fit: contain !important;
-  }
-  #morice-cta .morice-header svg.morice-avatar,
-  #morice-cta .morice-header svg {
-    width: 44px !important;
-    height: 44px !important;
-    max-width: 44px !important;
   }
 }
   `.trim();
