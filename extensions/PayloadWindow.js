@@ -172,14 +172,14 @@
   width: 100% !important;
 }
 #morice-cta .morice-avatar {
-  width: 95px !important;
+  width: 100px !important;
   height: auto !important;
   flex: 0 0 55px !important;
-  max-width: 95px !important;
+  max-width: 100px !important;
   object-fit: contain !important;
   border-radius: 0 !important;
   background: transparent !important;
-  margin: -5px 5px 0 0 !important;
+  margin: -6px -28px 0px 0px !important;
   display: block !important;
 }
 #morice-cta .morice-title {
